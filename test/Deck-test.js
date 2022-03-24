@@ -76,4 +76,9 @@ describe('Deck', () => {
     expect(deck2.deck).to.deep.equal([card4, card5, card6]);
   })
 
+  it('should know how many cards are in a deck', () => {
+    expect(deck1.countCards()).to.equal(3);
+    expect(deck2.countCards()).to.equal(3);
+  })
+
 });

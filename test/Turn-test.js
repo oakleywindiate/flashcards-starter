@@ -59,4 +59,14 @@ describe('Turn', () => {
     expect(turn2.returnCard()).to.equal(card2);
   })
 
+  it('should be able to evaluate the guess to true or false', () => {
+    expect(turn1.evaluateGuess()).to.equal(true);
+    expect(turn2.evaluateGuess()).to.equal(false);
+  })
+
+  it('should be able to evaluate if the guess is correct or incorrect', () => {
+    expect(turn1.giveFeedback()).to.equal("correct");
+    expect(turn2.giveFeedback()).to.equal("incorrect");
+  })
+
 });

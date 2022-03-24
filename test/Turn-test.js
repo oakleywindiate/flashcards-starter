@@ -1,7 +1,6 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const Card = require('../src/Card');
 const Turn = require('../src/Turn');
 
 describe('Turn', () => {
@@ -44,7 +43,7 @@ describe('Turn', () => {
     expect(turn1).to.be.an.instanceof(Turn);
   });
 
-  it('should be able to take two arguments: a card and a guess', () => {
+  it('should be able to take two arguments: a guess and a card', () => {
     expect(turn1.guess).to.equal(guess1);
     expect(turn1.card).to.equal(card1);
   })

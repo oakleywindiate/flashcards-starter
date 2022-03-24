@@ -71,4 +71,9 @@ describe('Deck', () => {
     expect(deck1).to.be.an.instanceof(Deck);
   });
 
+  it('should hold an array of card objects', () => {
+    expect(deck1.deck).to.deep.equal([card1, card2, card3]);
+    expect(deck2.deck).to.deep.equal([card4, card5, card6]);
+  })
+
 });
